@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #ffffffff;
+}
+
+/* Inicio de decoraciones para section */
+body {
+  background-color: #000000;
+}
+
+.carousel {
+  margin-top: 1rem;
+  margin-left: 20rem;
+}
+
+.h3Bienvenido {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+.card {
+  margin-top: 2rem;
+  background-color: #000000;
+}
+
+.cardTittle {
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cardText {
+  background-color: #000000;
+  border-radius: 1%;
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cardTextBottom {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+.cardTextBottom2 {
+  margin-top: 1.5rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+.cardTextBottom3 {
+  margin-top: 3.5rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
+}
+
+.imgLeFestin {
+  box-shadow: 7px -5px #ffffffff;
+}
+
+.imgLeFestin1 {
+  box-shadow: -7px -5px #ffffffff;
+}
+
+.CardAboutUs {
+  width: 35rem;
+  text-align: center;
+  box-shadow: -7px -5px #ffffffff;
+}
+
+.aparecerDesdeIzquierda {
+  opacity: 0;
+  animation-name: aparecerDesdeIzquierda;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecerDesdeIzquierda {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.aparecerDesdeDerecha {
+  opacity: 0;
+  animation-name: aparecerDesdeDerecha;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecerDesdeDerecha {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.aparecerDesdeArriba {
+  opacity: 0;
+  animation-name: aparecerDesdeArriba;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecerDesdeArriba {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.aparecer {
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fin de decoraciones para section */

@@ -1,0 +1,19 @@
+{
+  "name": "le-festin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/Main.scss css/Style.css --outputStyle expanded",
+    "watch-css": "nodemon -e scss -x \"npm run build-css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.10.4",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
