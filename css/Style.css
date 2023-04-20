@@ -1,9 +1,62 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 * {
   padding: 0;
   margin: 0;
   color: #ffffffff;
 }
 
+/* Inicio decoraciones header */
+section {
+  margin-top: 183px;
+  /*separa el navbar con el resto*/
+}
+
+.navbar .clase li a:hover {
+  color: red;
+}
+
+.clase li a {
+  color: white;
+  font-size: 14px;
+  margin: 0 5px 0 5px;
+}
+
+.clase li {
+  margin-top: 90px;
+}
+
+.navbar {
+  background-color: black;
+  height: 100px;
+}
+
+.navbar-toggler {
+  background-color: #e12020;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    height: 130px;
+  }
+  .clase li {
+    margin-top: 25px;
+  }
+  .clase li a {
+    font-size: 17px;
+  }
+  .clase ul {
+    background-color: black;
+  }
+  .clase a i {
+    margin: 15px;
+  }
+  img[src="logo.png"] {
+    margin-top: -10px;
+    width: 50%;
+  }
+}
+
+/* Fin decoraciones header */
 /* Inicio de decoraciones para section */
 body {
   background-color: #000000;
@@ -149,3 +202,22 @@ body {
 }
 
 /* Fin de decoraciones para section */
+/* Inicio decoraciones footer */
+footer {
+  background-color: #000000;
+  color: #ffffffff;
+}
+
+i {
+  color: #000000;
+}
+
+.bi {
+  font-size: 3em;
+}
+
+#maps {
+  height: 400px;
+}
+
+/* Fin decoraciones footer */

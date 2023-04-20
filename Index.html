@@ -12,62 +12,80 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 
 <body>
 
-  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+        <!-- Header Start -->
 
+        <header>
 
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              <a class="navbar-brand d-lg-none" href="#">
+                <img src="./Assets/Header/icono.png" alt="logo">
+              </a>
+              <button class="navbar-toggler ms-auto order-lg-0 btn-lg" type="button" data-bs-toggle="collapse"
+                data-bs-target="#Menu" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+              <div class="clase collapse navbar-collapse" id="Menu">
+                <ul class="clase navbar-nav mx-auto text-center mt-4">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#LeFestin">Home</a>
+                    <a class="nav-link" href="#LeFestin">EL RESTAURANT</a>
                   </li>
+        
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#TerrasseLeFestin">TERRASSE LE FESTIN</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                      aria-expanded="false">
-                      Dropdown
+        
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#Eventos">EVENTOS</a>
+                  </li>
+        
+                    <img src="./Assets/Header/icono.png" class=" d-none d-lg-block " alt="" style="width:160px; height:160px;margin-top: 50px;">
+        
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/Pages/AboutUs.html" target="_blank">NOSOTROS</a>
+                  </li>
+        
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Footer">UBICACIÓN</a>
+                  </li>
+        
+                  <li class="nav-item" style="margin-bottom:20px">
+                    <a href="#" style="text-decoration: none;">
+                      <i class="face bi bi-facebook"
+                        style="font-size: 1.3rem; color:white ;margin-left: 15px"></i>
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a href="#" style="text-decoration: none;">
+                      <i class="inst bi bi-instagram"
+                        style="font-size: 1.3rem; color:white ;margin-left: 15px;"></i>
+                    </a>
+                    <a href="#" style="text-decoration: none;">
+                      <i class="twi bi bi-twitter" style="font-size: 1.3rem; color:white ;margin-left: 15px;"></i>
+                    </a>
                   </li>
                 </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
+      
+        </header>
 
-          <!-- Section Start -->
+        <!-- Header End -->
 
-   <section>
+        <!-- Section Start -->
+
+        <section>
 
           <div class="card mb-5 aparecerDesdeIzquierda" id="LeFestin">
             <div class="row">
@@ -97,7 +115,7 @@
             </div>
           </div>
 
-          <div class="card mb-5 aparecerDesdeDerecha" id="TerraseLeFestin">
+          <div class="card mb-5 aparecerDesdeDerecha" id="TerrasseLeFestin">
             <div class="row">
               <div class="col-md-6">
                 <div class="card-body cardBody">
@@ -114,7 +132,8 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <img src="/Assets/Section/SectionImg/TerrazaLeFestin.jpg" class="img-fluid rounded imgLeFestin1" alt="...">
+                <img src="/Assets/Section/SectionImg/TerrazaLeFestin.jpg" class="img-fluid rounded imgLeFestin1"
+                  alt="...">
               </div>
             </div>
           </div>
@@ -127,9 +146,12 @@
               <div class="col-md-6">
                 <div class="card-body cardBody">
                   <h5 class="card-title cardTittle">Eventos</h5>
-                  <p class="card-text cardText">Tanto el primer piso de <span class="lobster">Le Festin</span> como nuestra
-                    <span class="lobster">Terrasse Le Festin</span> estan disponibles para reservar en local, ya sean eventos privados, 
-                    fiestas, reuniones importantes con tu jefe o cena de reconciliacion, <span class="lobster">Le Festin</span>
+                  <p class="card-text cardText">Tanto el primer piso de <span class="lobster">Le Festin</span> como
+                    nuestra
+                    <span class="lobster">Terrasse Le Festin</span> estan disponibles para reservar desde donde quieras,
+                    ya sean eventos privados,
+                    fiestas, reuniones importantes con tu jefe o cena de reconciliacion, <span class="lobster">Le
+                      Festin</span>
                     siempre tendra las puertas abiertas para ti y tus acompañantes.
                   </p>
                   <p class="card-text cardTextBottom3">Animate a un poco mas de privacidad.</p>
@@ -138,19 +160,76 @@
             </div>
           </div>
 
-        </div>
       </div>
     </div>
-    </div>
+  </div>
+  </div>
 
   </section>
 
-      <!-- Section End -->
+  <!-- Section End -->
+
+  <!-- Footer Start -->
+
+  <footer id="Footer">
+
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-md-4 text-center">
+          <h4>Contacto</h4>
+          <form id="formulario" class="mt-4">
+            <div class="mb-3">
+              <label for="nombre" class="form-label FormLabel">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light" id="botonEnviar">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Síganos</h4>
+          <ul class="list-unstyled mt-5">
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Ubicacion</h4>
+          <div id="maps" class="mt-4"></div>
+        </div>
+      </div>
+      <hr>
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; 2023 Todos los derechos reservados</p>
+          </div>
+          <div class="col-md-6">
+            <p class="mb-0 text-end">Desarrollado por Le Festin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Footer Start -->
 
   <script src="/JS/Script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDacAsIKdB8GFu5dbl0kHBQl_iESETFpCo&callback=iniciarMap">
+  </script>
 
 </body>
 
