@@ -26,59 +26,65 @@
         <header>
 
           <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand d-lg-none" href="#">
-                <img src="./Assets/Header/icono.png" alt="logo">
+            <div class=" container-fluid">
+              <a class="navbar-brand d-lg-none">
+                <img class="logoo" src="./Assets/Header/icono.png" alt="logo">
               </a>
               <button class="navbar-toggler ms-auto order-lg-0 btn-lg" type="button" data-bs-toggle="collapse"
                 data-bs-target="#Menu" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-        
+
               <div class="clase collapse navbar-collapse" id="Menu">
                 <ul class="clase navbar-nav mx-auto text-center mt-4">
                   <li class="nav-item">
                     <a class="nav-link" href="#LeFestin">EL RESTAURANT</a>
                   </li>
-        
+
                   <li class="nav-item">
                     <a class="nav-link" href="#TerrasseLeFestin">TERRASSE LE FESTIN</a>
                   </li>
-        
+
                   <li class="nav-item ">
                     <a class="nav-link" href="#Eventos">EVENTOS</a>
                   </li>
-        
-                    <img src="./Assets/Header/icono.png" class=" d-none d-lg-block " alt="" style="width:160px; height:160px;margin-top: 50px;">
-        
+
+                  <img src="./Assets/Header/icono.png" class="d-none d-lg-block iconoLeFestin" alt="IconLeFestin">
+
                   <li class="nav-item ">
                     <a class="nav-link" href="/Pages/AboutUs.html" target="_blank">NOSOTROS</a>
                   </li>
-        
-        
+
+
                   <li class="nav-item">
                     <a class="nav-link" href="#Footer">UBICACIÓN</a>
                   </li>
-        
+
                   <li class="nav-item" style="margin-bottom:20px">
-                    <a href="#" style="text-decoration: none;">
-                      <i class="face bi bi-facebook"
-                        style="font-size: 1.3rem; color:white ;margin-left: 15px"></i>
+                    <a href="https://youtu.be/EcfEajB2F8s" style="text-decoration: none;">
+                      <i class="face bi bi-facebook"></i>
                     </a>
-                    <a href="#" style="text-decoration: none;">
-                      <i class="inst bi bi-instagram"
-                        style="font-size: 1.3rem; color:white ;margin-left: 15px;"></i>
+                    <a href="https://youtu.be/7hHZnvjCbVw" style="text-decoration: none;">
+                      <i class="inst bi bi-instagram"></i>
                     </a>
-                    <a href="#" style="text-decoration: none;">
-                      <i class="twi bi bi-twitter" style="font-size: 1.3rem; color:white ;margin-left: 15px;"></i>
+                    <a href="https://youtu.be/eiCYrcHAd6g" style="text-decoration: none;">
+                      <i class="twi bi bi-twitter"></i>
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-      
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $('.navbar-nav > li > a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+              });
+            });
+          </script>
+
         </header>
 
         <!-- Header End -->
@@ -87,13 +93,13 @@
 
         <section>
 
-          <div class="card mb-5 aparecerDesdeIzquierda" id="LeFestin">
+          <div class="card mb-3 aparecerDesdeIzquierda" id="LeFestin">
             <div class="row">
               <div class="col-md-6">
-                <video src="./Assets/Section/SectionVideo/LeFestin.mp4" autoplay loop>
+                <video src="./Assets/Section/SectionVideo/LeFestin.mp4" class="video" autoplay loop>
               </div>
-              <div class="col-md-6">
-                <div class="card-body cardBody">
+              <div class="col-sm-6">
+                <div class="card-body text-center">
                   <h5 class="card-title cardTittle">Sobre "Le Festin"</h5>
                   <p class="card-text cardText">¡Bienvenido a Le Festin, una experiencia culinaria auténticamente
                     francesa en el corazón de París!
@@ -115,10 +121,10 @@
             </div>
           </div>
 
-          <div class="card mb-5 aparecerDesdeDerecha" id="TerrasseLeFestin">
+          <div class="card mb-3 aparecerDesdeDerecha" id="TerrasseLeFestin">
             <div class="row">
               <div class="col-md-6">
-                <div class="card-body cardBody">
+                <div class="card-body text-center">
                   <h5 class="card-title cardTittle">Terrasse Le Festin</h5>
                   <p class="card-text cardText">Disfruta de una cena inolvidable mientras contemplas la espectacular
                     vista de París y la icónica <span class="lobster">Torre Eiffel</span> iluminada. En nuestra terraza,
@@ -144,7 +150,7 @@
                 <img src="/Assets/Section/SectionImg/Eventos.jpg" class="img-fluid rounded imgLeFestin" alt="...">
               </div>
               <div class="col-md-6">
-                <div class="card-body cardBody">
+                <div class="card-body text-center">
                   <h5 class="card-title cardTittle">Eventos</h5>
                   <p class="card-text cardText">Tanto el primer piso de <span class="lobster">Le Festin</span> como
                     nuestra
@@ -154,6 +160,8 @@
                       Festin</span>
                     siempre tendra las puertas abiertas para ti y tus acompañantes.
                   </p>
+                  <a href="./Pages/Booking.html" class="booking btn btn-secondary boton-reserva"
+                      target="_blank">Reservar una mesa</a>
                   <p class="card-text cardTextBottom3">Animate a un poco mas de privacidad.</p>
                 </div>
               </div>
@@ -176,29 +184,33 @@
     <div class="container">
       <div class="row pt-4">
         <div class="col-md-4 text-center">
-          <h4>Contacto</h4>
-          <form id="formulario" class="mt-4">
+          <h4 class="mb-4">Contacto</h4>
+          <form id="formulario">
             <div class="mb-3">
-              <label for="nombre" class="form-label FormLabel">Nombre</label>
+              <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" required>
+              <label id="nombreValido"></label>
             </div>
             <div class="mb-3">
               <label for="correo" class="form-label">Correo electrónico</label>
               <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico" required>
+              <label id="correoValido"></label>
             </div>
             <div class="mb-3">
               <label for="mensaje" class="form-label">Mensaje</label>
               <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+              <label id="mensajeValido"></label>
             </div>
             <button type="submit" class="btn btn-light" id="botonEnviar">Enviar</button>
           </form>
         </div>
+
         <div class="col-md-4 text-center">
           <h4>Síganos</h4>
           <ul class="list-unstyled mt-5">
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://youtu.be/EcfEajB2F8s" target="_blank" rel="noopener" title="icon"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://youtu.be/7hHZnvjCbVw" target="_blank" rel="noopener" title="icon"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="https://youtu.be/eiCYrcHAd6g" target="_blank" rel="noopener" title="icon"><i class="bi bi-instagram"></i></a></li>
           </ul>
         </div>
         <div class="col-md-4 text-center">
@@ -227,8 +239,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDacAsIKdB8GFu5dbl0kHBQl_iESETFpCo&callback=iniciarMap">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDacAsIKdB8GFu5dbl0kHBQl_iESETFpCo&callback=iniciarMap">
   </script>
 
 </body>

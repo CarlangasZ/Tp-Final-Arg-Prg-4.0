@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 * {
   padding: 0;
@@ -6,6 +7,41 @@
 }
 
 /* Inicio decoraciones header */
+.navbar .clase li a:hover {
+  color: red;
+}
+
+.clase li a {
+  color: white;
+  font-size: 14px;
+  margin: 0 5px 0 5px;
+}
+
+.clase li {
+  margin-top: 90px;
+}
+
+.navbar {
+  background-color: black;
+  height: 100px;
+}
+
+.navbar-toggler {
+  background-color: #e12020;
+}
+
+#TerrasseLeFestin {
+  scroll-margin-top: 110px;
+}
+
+#Eventos {
+  scroll-margin-top: 110px;
+}
+
+#LeFestin {
+  scroll-margin-top: 110px;
+}
+
 section {
   margin-top: 183px;
   /*separa el navbar con el resto*/
@@ -35,6 +71,10 @@ section {
 }
 
 @media screen and (max-width: 990px) {
+  a img {
+    margin-top: -0px;
+    width: 50%;
+  }
   .navbar {
     height: 130px;
   }
@@ -50,10 +90,30 @@ section {
   .clase a i {
     margin: 15px;
   }
-  img[src="logo.png"] {
-    margin-top: -10px;
-    width: 50%;
-  }
+}
+
+.inst {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 15px;
+}
+
+.twi {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 15px;
+}
+
+.face {
+  font-size: 1.3rem;
+  color: white;
+  margin-left: 15px;
+}
+
+.iconoLeFestin {
+  width: 160px;
+  height: 160px;
+  margin-top: 50px;
 }
 
 /* Fin decoraciones header */
@@ -98,13 +158,13 @@ body {
 }
 
 .cardTextBottom2 {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-family: 'Lobster', cursive;
   text-align: center;
 }
 
 .cardTextBottom3 {
-  margin-top: 3.5rem;
+  margin-top: 1rem;
   font-family: 'Lobster', cursive;
   text-align: center;
 }
@@ -123,7 +183,6 @@ body {
 
 .CardAboutUs {
   width: 35rem;
-  text-align: center;
   box-shadow: -7px -5px #ffffffff;
 }
 
@@ -201,7 +260,52 @@ body {
   }
 }
 
-/* Fin de decoraciones para section */
+@media (max-width: 1000px) {
+  .video {
+    display: none;
+  }
+  .imgLeFestin {
+    display: none;
+  }
+  .imgLeFestin1 {
+    display: none;
+  }
+}
+
+.boton-reserva {
+  background-color: #ffffff;
+  /* Cambia el color del texto a rojo al pasar el cursor sobre el botón */
+  color: #000000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boton-reserva:hover {
+  background-color: #ff0000;
+  /* Cambia el color del texto a rojo al pasar el cursor sobre el botón */
+}
+
+/* Inicio decoraciones Booking */
+.booking {
+  text-decoration: none;
+  color: #ffffffff;
+}
+
+.cantidadPersonas {
+  font-family: 'Dongle', sans-serif;
+}
+
+.divInput {
+  justify-content: center;
+  align-items: center;
+}
+
+.formBooking {
+  border: 2px solid #ffffffff;
+}
+
+/* Fin decoraciones Booking
+  
+  /* Fin de decoraciones para section */
 /* Inicio decoraciones footer */
 footer {
   background-color: #000000;

@@ -1,293 +1,391 @@
-*{
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
-    padding: 0;
-    margin: 0;
-    color: #ffffffff;
+* {
+
+  padding: 0;
+  margin: 0;
+  color: #ffffffff;
 
 }
 
 /* Inicio decoraciones header */
 
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
-
 section {
-    margin-top: 183px;
-    /*separa el navbar con el resto*/
-}
-
-.navbar .clase li a:hover {
-    color: red;
-}
-
-.clase li a {
-    color: rgb(255, 255, 255);
-    font-size: 14px;
-    margin: 0 5px 0 5px;
-}
-
-.clase li {
-    margin-top: 90px;
+  margin-top: 183px;
 }
 
 
 .navbar {
-    background-color: black;
-    height: 100px;
+  background-color: #000000;
+  height: 100px;
 }
+
+.clase li {
+  margin-top: 90px;
+}
+
+.clase li a {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0 5px 0 5px;
+}
+
+
+.navbar .clase li a:hover {
+  color: red;
+}
+
+.iconoLeFestin {
+  width: 160px;
+  height: 160px;
+  margin-top: 50px;
+}
+
+.clase a i{
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.clase a i:hover{
+  color:#ff0000
+}
+
 
 .navbar-toggler {
-    background-color: rgb(225, 32, 32);
+  background-color: #e12020;
 }
 
+#TerrasseLeFestin {
+  scroll-margin-top: 110px;
+}
+
+#Eventos {
+  scroll-margin-top: 110px;
+}
+
+#LeFestin {
+  scroll-margin-top: 110px;
+}
 
 @media screen and (max-width: 990px) {
-    .navbar {
-        height: 130px;
-    }
+  a img {
+    width: 50%;
+  }
 
-    .clase li {
-        margin-top: 25px;
-    }
+  .navbar {
+    height: 135px;
+  }
 
-    .clase li a {
-        font-size: 17px;
-    }
+  .clase li {
+    margin-top: 25px;
+  }
 
-    .clase ul {
-        background-color: black;
-    }
+  .clase li a {
+    font-size: 17px;
+  }
 
-    .clase a i {
-        margin: 15px;
-    }
+  .clase ul {
+  background-color: #000000;
+  }
 
-    img[src="logo.png"] {
-        margin-top: -10px;
-        width: 50%;
-    }
+  .redes{
+    margin-bottom: 20px;
+  }
+
+  .clase a i {
+    margin: 15px;
+  }
+
+  #Eventos {
+    scroll-margin-top: 0px;
+  }
 }
-
 /* Fin decoraciones header */
 
 /* Inicio de decoraciones para section */
 
-body{
+body {
 
-    background-color: #000000;
-
-}
-
-.carousel{
-
-    margin-top: 1rem;
-    margin-left: 20rem;
+  background-color: #000000;
 
 }
 
-.h3Bienvenido{
+.carousel {
 
-    text-align: center;
-    font-family: 'Lobster', cursive;
-
-}
-
-.card{
-
-    margin-top: 2rem;
-    background-color: #000000;
+  margin-top: 1rem;
+  margin-left: 20rem;
 
 }
 
-.cardTittle{
+.h3Bienvenido {
 
-
-    font-family: 'Lobster', cursive;
-    font-size: 50px;
-    margin-bottom: 1rem;
-    text-align: center;
+  text-align: center;
+  font-family: 'Lobster', cursive;
 
 }
 
-.cardText{
+.card {
 
-    background-color: #000000;
-    border-radius: 1%;
-    font-family: 'Dongle', sans-serif;
-    text-align: center;
-    margin-top: 3rem;
-    
-}
-
-.cardTextBottom{
-
-    font-family: 'Lobster', cursive;
-    text-align: center;
+  margin-top: 2rem;
+  background-color: #000000;
 
 }
 
-.cardTextBottom2{
+.cardTittle {
 
-    margin-top: 1.5rem;
-    font-family: 'Lobster', cursive;
-    text-align: center;
 
-}
-
-.cardTextBottom3{
-
-    margin-top: 3.5rem;
-    font-family: 'Lobster', cursive;
-    text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+  margin-bottom: 1rem;
+  text-align: center;
 
 }
 
-.lobster{
+.cardText {
 
-    font-family: 'Lobster', cursive;
-
-}
-
-.imgLeFestin{
-
-    box-shadow: 7px -5px #ffffffff;
+  background-color: #000000;
+  border-radius: 1%;
+  font-family: 'Dongle', sans-serif;
+  text-align: center;
+  margin-top: 3rem;
 
 }
 
-.imgLeFestin1{
+.cardTextBottom {
 
-    box-shadow: -7px -5px #ffffffff;
-
-}
-
-.CardAboutUs{
-
-    width: 35rem;
-    text-align: center;
-    box-shadow: -7px -5px #ffffffff;
+  font-family: 'Lobster', cursive;
+  text-align: center;
 
 }
 
-.aparecerDesdeIzquierda{
+.cardTextBottom2 {
+
+  margin-top: 1rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+
+}
+
+.cardTextBottom3 {
+
+  margin-top: 1rem;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+
+}
+
+.lobster {
+
+  font-family: 'Lobster', cursive;
+
+}
+
+.imgLeFestin {
+
+  box-shadow: 7px -5px #ffffffff;
+
+}
+
+.imgLeFestin1 {
+
+  box-shadow: -7px -5px #ffffffff;
+
+}
+
+.CardAboutUs {
+
+  width: 35rem;
+  box-shadow: -7px -5px #ffffffff;
+
+}
+
+.aparecerDesdeIzquierda {
+
+  opacity: 0;
+  animation-name: aparecerDesdeIzquierda;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes aparecerDesdeIzquierda {
+
+  from {
 
     opacity: 0;
-    animation-name: aparecerDesdeIzquierda;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-  
-  }
-  
-  @keyframes aparecerDesdeIzquierda {
-  
-    from {
-  
-      opacity: 0;
-      transform: translateX(-100%);
-  
-    } to {
-  
-      opacity: 1;
-      transform: translateX(0%);
-  
-    }
-  
+    transform: translateX(-100%);
+
   }
 
-  .aparecerDesdeDerecha{
+  to {
 
-    opacity: 0;
-    animation-name: aparecerDesdeDerecha;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-  
-  }
-  
-  @keyframes aparecerDesdeDerecha {
-  
-    from {
-  
-      opacity: 0;
-      transform: translateX(100%);
-  
-    } to {
-  
-      opacity: 1;
-      transform: translateX(0%);
-  
-    }
-  
+    opacity: 1;
+    transform: translateX(0%);
+
   }
 
-  .aparecerDesdeArriba{
+}
+
+.aparecerDesdeDerecha {
+
+  opacity: 0;
+  animation-name: aparecerDesdeDerecha;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes aparecerDesdeDerecha {
+
+  from {
 
     opacity: 0;
-    animation-name: aparecerDesdeArriba;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-  
-  }
-  
-  @keyframes aparecerDesdeArriba {
-  
-    from {
-  
-      opacity: 0;
-      transform: translateY(-100%);
-  
-    } to {
-  
-      opacity: 1;
-      transform: translateY(0%);
-  
-    }
-  
+    transform: translateX(100%);
+
   }
 
-  .aparecer{
+  to {
+
+    opacity: 1;
+    transform: translateX(0%);
+
+  }
+
+}
+
+.aparecerDesdeArriba {
+
+  opacity: 0;
+  animation-name: aparecerDesdeArriba;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes aparecerDesdeArriba {
+
+  from {
 
     opacity: 0;
-    animation-name: aparecer;
-    animation-duration: 2s;
-    animation-delay: 0.8s;
-    animation-fill-mode: forwards;
+    transform: translateY(-100%);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0%);
+
+  }
+
+}
+
+.aparecer {
+
+  opacity: 0;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes aparecer {
+
+  from {
+
+    opacity: 0;
+
+  }
+
+  to {
+
+    opacity: 1;
+
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .video {
+    display: none;
+  }
+
+  .imgLeFestin{
+
+    display: none;
   
   }
   
-  @keyframes aparecer {
+  .imgLeFestin1{
   
-    from {
-  
-      opacity: 0;
-  
-    } to {
-  
-      opacity: 1;
-  
-    }
+    display: none;
   
   }
+
+}
+
+.boton-reserva {
+background-color: #ffffff; /* Cambia el color del texto a rojo al pasar el cursor sobre el botón */
+color: #000000;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boton-reserva:hover {
+background-color: #ff0000; /* Cambia el color del texto a rojo al pasar el cursor sobre el botón */
+}
+
+/* Inicio decoraciones Booking */
+
+.booking {
+
+  text-decoration: none;
+  color: #ffffffff;
+
+}
+
+.cantidadPersonas {
+
+  font-family: 'Dongle', sans-serif;
+
+}
+
+.divInput {
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.formBooking {
+
+  border: 2px solid #ffffffff;
+
+}
+
+/* Fin decoraciones Booking
   
   /* Fin de decoraciones para section */
 
-  /* Inicio decoraciones footer */
+/* Inicio decoraciones footer */
 
-  footer{
-    background-color: #000000;
-    color: #ffffffff;
+footer {
+  background-color: #000000;
+  color: #ffffffff;
 }
 
-i{
-    color: #000000;
+i {
+  color: #000000;
 }
 
-.bi{
-    font-size: 3em;
+.bi {
+  font-size: 3em;
 }
 
 #maps {
-    height: 400px;
+  height: 400px;
 }
 
 /* Fin decoraciones footer */
